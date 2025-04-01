@@ -1,4 +1,4 @@
-M&E
+
 M&E es una plataforma web para ofrecer servicios de construcción, reparaciones, lavado de fachadas e impermeabilizaciones. La aplicación está construida con React, Supabase y TypeScript para ofrecer una experiencia moderna, rápida y segura a nuestros clientes.
 
 Tabla de Contenidos
@@ -83,22 +83,6 @@ Autenticación: Los usuarios pueden registrarse o iniciar sesión para solicitar
 
 Dashboard Administrativo: (Opcional) Se puede implementar un panel para gestionar los servicios, ver estadísticas y administrar usuarios.
 
-Estructura del Proyecto
-bash
-Copiar
-Editar
-ME-project/
-├── public/
-├── src/
-│   ├── components/       # Componentes reutilizables de React
-│   ├── pages/            # Vistas principales (Inicio, Servicios, Contacto, etc.)
-│   ├── services/         # Integración con Supabase y lógica de negocio
-│   ├── styles/           # Archivos de estilos (CSS/Sass)
-│   ├── App.tsx           # Componente principal
-│   └── index.tsx         # Punto de entrada de la aplicación
-├── .env                  # Variables de entorno
-├── package.json          # Scripts y dependencias del proyecto
-└── README.md             # Este archivo
 Contribuciones
 Las contribuciones son bienvenidas. Si deseas mejorar la aplicación o añadir nuevas funcionalidades, por favor sigue estos pasos:
 
