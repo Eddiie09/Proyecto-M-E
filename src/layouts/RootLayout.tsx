@@ -11,30 +11,17 @@ export const RootLayout = () => {
 
   return (
     <div className="flex flex-col min-h-screen font-montserrat">
-      {/* Navbar */}
       <Navbar />
 
-      {
-        pathname === '/' && (
-          <Banner />
-        )
-      }
+      { pathname === '/' && <Banner /> }
 
-      {/* Contenido dinámico de cada página */}
       <main className="container my-8 flex-1">
         <Outlet />
       </main>
 
-      {
-        pathname === '/' && (
-         <Newsletter />
-        )
-      }
+      { pathname === '/' && <Newsletter /> }
 
-      {/* Footer */}
-      <Footer className="bg-gray-200 text-center py-4">
-        © 2025 - Mi Sitio Web
-      </Footer>
+      <Footer />
     </div>
   );
 };
