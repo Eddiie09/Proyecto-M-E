@@ -11,7 +11,7 @@ export const Navbar = () => {
   const navbarLinks = [
     { id: 1, href: "/", title: "Inicio" },
     { id: 2, href: "/productos", title: "Productos" },
-    { id: 3, href: "/contacto", title: "Contacto" },
+    { id: 3, href: "/nosotros", title: "Sobre Nosotros" },
   ];
 
   return (

@@ -1,5 +1,16 @@
 import { color, product, VariantProduct } from "../interfaces";
 
+
+// Función para formatear el precio a dolares
+export const formatPrice = (price: number) => {
+    return new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    }).format(price);
+}
+
 // Función para preparar los productos - (Celulares)
 export const prepareProducts = (products: product[]) => {
     return products.map((product: product) => {

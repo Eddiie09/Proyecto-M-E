@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { FiPlus } from "react-icons/fi";
 import { useState } from "react";
 import { VariantProduct } from "../../interfaces";
+import { formatPrice } from "../../helpers";
 
 interface Props {
     images: string[];
@@ -34,7 +35,7 @@ export const CardProduct = ({
 
     return (
         <div className="flex flex-col gap-6 relative">
-            <Link to={`/celulares/${slug}`} className="flex relative group">
+            <Link to={`/celulares/${slug}`} className="flex relative group overflow-hidden">
                 <div className="flex h-[350px] w-full items-center justify-center py-2 lg:h-[250px]">
                     <img
                         src={images[0]}
@@ -55,7 +56,7 @@ export const CardProduct = ({
 
             <div className="flex flex-col gap-1 items-center">
                 <p className="text-[15px] font-medium">{name}</p>
-                <p className="text-[15px] font-price">${price}</p>
+                <p className="text-[15px] font-price">{formatPrice(price)}</p>
 
                 <div className="flex gap-3">
                     {colors.map((color) => (

@@ -1,7 +1,7 @@
 import { Brands } from "../components/home/Brands"
 import { FeatureGrid } from "../components/home/FeatureGird"
 import { ProductGrid } from "../components/home/ProductGrid"
-import { allCelulares, popularCelulares, recentCelulares } from "../data/initialData"
+import { popularCelulares, recentCelulares } from "../data/initialData"
 import { prepareProducts } from "../helpers"
 
 export const HomePage = () => {
@@ -9,7 +9,6 @@ export const HomePage = () => {
   const preparedRecentProducts = prepareProducts(recentCelulares);
   const preparedPopularProducts = prepareProducts(popularCelulares);
 
-  console.log(preparedRecentProducts);
 
   return (
     <div>
