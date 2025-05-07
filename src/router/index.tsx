@@ -17,16 +17,16 @@ export const router = createBrowserRouter([
         element: <CellPhonePage />
       },
       {
+        path: 'productos',  // Alias para celulares
+        element: <CellPhonePage />
+      },
+      {
         path: 'nosotros',
         element: <AboutPage />
       },
       {
-        path: 'productos',
-        element: <div>Página de Productos</div>
-      },
-      {
-        path: 'contacto',  // <--- Agregamos esta línea
-        element: <div>Contacto</div>  // <--- Puedes cambiar esto por tu componente de Contacto
+        path: 'contacto',
+        element: <div>Contacto</div>
       }
     ]
   },

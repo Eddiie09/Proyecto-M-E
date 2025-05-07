@@ -3,9 +3,12 @@ import { FeatureGrid } from "../components/home/FeatureGird"
 import { ProductGrid } from "../components/home/ProductGrid"
 import { popularCelulares, recentCelulares } from "../data/initialData"
 import { prepareProducts } from "../helpers"
+import { useProducts } from "../hooks/index"
 
 export const HomePage = () => {
 
+  const {products, isLoading} = useProducts();
+  
   const preparedRecentProducts = prepareProducts(recentCelulares);
   const preparedPopularProducts = prepareProducts(popularCelulares);
 
