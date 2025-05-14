@@ -3,6 +3,7 @@ import { prepareProducts } from "../helpers";
 import { ContainerFilter } from "../components/products/ContainerFilter";
 import { useFilteredProducts } from "../hooks/index";
 import { useState } from "react";
+import { Pagination } from "../components/shared/Pagination";
 
 export default function CellPhonePage() {
   const [page, setPage] = useState(1);
@@ -56,6 +57,12 @@ export default function CellPhonePage() {
               ))}
             </div>
             {/* TODO: Paginacion */}
+            <Pagination
+              totalItems={totalProducts ?? 0}
+              page={page}
+              setPage={setPage}
+            />
+
           </div>
         )}
       </div>
