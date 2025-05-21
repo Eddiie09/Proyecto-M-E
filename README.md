@@ -1,5 +1,5 @@
 
-M&E es una plataforma web para ofrecer servicios de construcción, reparaciones, lavado de fachadas e impermeabilizaciones. La aplicación está construida con React, Supabase y TypeScript para ofrecer una experiencia moderna, rápida y segura a nuestros clientes.
+M&E Celulares es una plataforma web dedicada a la venta de celulares nuevos y usados, accesorios y servicios relacionados. La aplicación está construida con React, Supabase y TypeScript para ofrecer una experiencia moderna, rápida y segura a nuestros clientes.
 
 Tabla de Contenidos
 Características
